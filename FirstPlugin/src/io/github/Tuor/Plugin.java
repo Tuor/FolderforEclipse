@@ -9,7 +9,7 @@ package io.github.Tuor;
 	    @Override
 	    public void onEnable() {
 	    	
-	    	//Init
+	    	
 	    	
 	    	getLogger().info("================================================\n"
 	    					+ "First PlugIn Init\n"
