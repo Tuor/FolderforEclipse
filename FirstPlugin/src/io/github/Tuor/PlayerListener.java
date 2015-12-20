@@ -19,5 +19,4 @@ public class PlayerListener implements Listener{
 			player.openInventory(player.getInventory());
 		}
 	}
-	
 }
