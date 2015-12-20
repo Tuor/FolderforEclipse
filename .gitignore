@@ -42,3 +42,10 @@ Network Trash Folder
 Temporary Items
 .apdisk
 .metadata
+.metadata/.plugins/org.eclipse.core.resources/.projects/FirstPlugin/.markers.snap
+*.snap
+.metadata/.plugins/org.eclipse.core.resources/.projects/FirstPlugin/.syncinfo.snap
+*.resources
+.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources
+.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi
+.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi
