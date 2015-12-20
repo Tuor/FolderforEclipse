@@ -9,7 +9,7 @@ import org.bukkit.entity.Player;
 	    @Override
 	    public void onEnable() {
 	    	
-	    	getLogger().info("First Plug In Init");
+	    	getLogger().info("First PlugIn Init");
 	     
 	    }
 	   
@@ -19,7 +19,8 @@ import org.bukkit.entity.Player;
 	    }
 	    
 	    public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args){
-	    	if(cmd.getName().equalsIgnoreCase("Kill")){
+	    	
+	    	if(cmd.getName().equalsIgnoreCase("Kill1")){
 	    		Player player = (Player) sender;
 	    		player.setHealth(0.0);
 	    		
