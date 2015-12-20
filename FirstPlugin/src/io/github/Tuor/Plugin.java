@@ -8,7 +8,7 @@ package io.github.Tuor;
 	 
 	    @Override
 	    public void onEnable() {
-	     getLogger().info("First Plug In Init");
+	    	getLogger().info("First Plug In Init");
 	     
 	    }
 	   
@@ -17,7 +17,6 @@ package io.github.Tuor;
 	    }
 	    
 	    public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args){
-	  return false;
+	    	return false;
 	    }
 	}
-
