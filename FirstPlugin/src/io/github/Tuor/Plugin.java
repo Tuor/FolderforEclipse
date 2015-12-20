@@ -9,7 +9,9 @@ import org.bukkit.entity.Player;
 	    @Override
 	    public void onEnable() {
 	    	
-	    	getLogger().info("First PlugIn Init");
+	    	getLogger().info("=================================================================\n"
+	    					+ "First PlugIn Init\n"
+	    				   + "=================================================================");
 	     
 	    }
 	   
