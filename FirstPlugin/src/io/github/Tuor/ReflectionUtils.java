@@ -459,7 +459,6 @@ public final class ReflectionUtils {
 				CLASS_MAP.put(type.reference, type);
 			}
 		}
-
 		/**
 		 * Construct a new data type
 		 * 
@@ -565,7 +564,6 @@ public final class ReflectionUtils {
 			}
 			return types;
 		}
-
 		/**
 		 * Returns the reference class array of the given object array
 		 * 
