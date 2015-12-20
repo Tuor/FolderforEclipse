@@ -2,17 +2,18 @@ package io.github.Tuor;
 
 	import org.bukkit.plugin.java.*;
 	import org.bukkit.command.*;
-import org.bukkit.entity.Player;
+	import org.bukkit.entity.Player;
 
 	public class Plugin extends JavaPlugin{
 	 
 	    @Override
 	    public void onEnable() {
 	    	
-	    	getLogger().info("=================================================================\n"
+	    	//Init
+	    	
+	    	getLogger().info("================================================\n"
 	    					+ "First PlugIn Init\n"
-	    				   + "=================================================================");
-	     
+	    				   + "================================================");
 	    }
 	   
 	    @Override
@@ -25,7 +26,6 @@ import org.bukkit.entity.Player;
 	    	if(cmd.getName().equalsIgnoreCase("Kill1")){
 	    		Player player = (Player) sender;
 	    		player.setHealth(0.0);
-	    		
 	    		return true;
 	    	}
 	    	return false;
