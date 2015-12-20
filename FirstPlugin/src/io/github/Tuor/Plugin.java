@@ -21,7 +21,8 @@ import org.bukkit.entity.Player;
 	    public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args){
 	    	if(cmd.getName().equalsIgnoreCase("Kill")){
 	    		Player player = (Player) sender;
-	    		player._INVALID_setHealth(0);
+	    		player.setHealth(0.0);
+	    		
 	    		return true;
 	    	}
 	    	return false;

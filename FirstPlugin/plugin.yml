@@ -1,0 +1,8 @@
+name: FirstPlugIn
+main: io.github.Tuor.FirstPlugIn
+version: 1.0
+commands:
+	kill1:
+		description: Kills the player who typed this command
+		usage;/<command> [player]
+		
