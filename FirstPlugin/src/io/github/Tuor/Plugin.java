@@ -29,7 +29,15 @@ package io.github.Tuor;
 	    			return false;
 	    		}
 	    	}
-	    	if()
+	    	if(cmd.getName().equalsIgnoreCase("Build")){
+	    		if(sender instanceof Player){
+	    			Player player = (Player) sender;
+	    			player.getEyeLocation();
+	    			return true;
+	    		}else{
+	    			return false;
+	    		}
+	    	}
 	    	return false;
 	    }	
 	}
