@@ -5,6 +5,6 @@ commands:
    kill1:
       description: Kills the player who typed this command
       usage: /<command> [player]
-   PlayerList1:
+   getPlayerList:
       description: Gets a player list
       usage: /<command> [player]
