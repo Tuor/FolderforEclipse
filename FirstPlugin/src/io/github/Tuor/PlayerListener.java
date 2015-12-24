@@ -23,6 +23,5 @@ public class PlayerListener implements Listener{
 			pl.addPlayer(player);
 			player.sendMessage("Welcome to the server");
 		}
-		
 	}
 }

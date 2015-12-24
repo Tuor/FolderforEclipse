@@ -26,6 +26,5 @@ public class PlayerList {
 		}else{
 		return false;	
 		}
-		
 	}
 }
