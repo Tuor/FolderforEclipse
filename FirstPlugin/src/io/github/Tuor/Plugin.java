@@ -11,8 +11,8 @@ package io.github.Tuor;
 	    public void onEnable() {
 	    	//Init
 	    	getLogger().info("================================================\n"+"First PlugIn Init\n"+"================================================");
-	    	new PlayerListener(this);
 	    	PlayerList playerlist = new PlayerList();
+	    	new PlayerListener(this, playerlist);
 	    }
 	   
 	    @Override
