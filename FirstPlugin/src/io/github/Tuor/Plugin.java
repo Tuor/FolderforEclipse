@@ -8,7 +8,7 @@ package io.github.Tuor;
 
 	public class Plugin extends JavaPlugin implements Listener{
 		
-		PlayerList playerList = new PlayerList();
+		
 	    @Override
 	    public void onEnable() {
 	    	/*Init=================================
@@ -19,7 +19,7 @@ package io.github.Tuor;
 	    	*/
 	    	getLogger().info("================================================\n"+"First PlugIn Init\n"+"================================================");
 	    	
-	    	new PlayerListener(this, playerList);
+	    	new PlayerListener(this);
 	    }
 	    
 	    public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args){
@@ -48,7 +48,7 @@ package io.github.Tuor;
 	    	//====================================================================================================
 	    	//====================================================================================================
 	    	if(cmd.getName().equalsIgnoreCase("getPlayerList")){
-	    		getLogger().info(playerList.getPlayerList());
+	    		getLogger().info("A");
 	    		return true;
 	    	}
 	    	//====================================================================================================
