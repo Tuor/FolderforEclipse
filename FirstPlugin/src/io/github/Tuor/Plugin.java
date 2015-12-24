@@ -8,6 +8,7 @@ package io.github.Tuor;
 
 	public class Plugin extends JavaPlugin implements Listener{
 		
+		PlayerList pl;
 		
 	    @Override
 	    public void onEnable() {
@@ -17,9 +18,11 @@ package io.github.Tuor;
 	    	If not
 	    	create new Player list
 	    	*/
+	    	pl = new PlayerList();
+	    	
 	    	getLogger().info("================================================\n"+"First PlugIn Init\n"+"================================================");
 	    	
-	    	new PlayerListener(this);
+	    	new PlayerListener(this, pl);
 	    }
 	    
 	    public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args){
@@ -51,7 +54,7 @@ package io.github.Tuor;
 	    	//====================================================================================================
 	    	//PlayerList Command
 	    	if(cmd.getName().equalsIgnoreCase("getPlayerList")){
-	    		getLogger().info("A");
+	    		getLogger().info(pl.getPlayerList());
 	    		return true;
 	    	}
 	    	//====================================================================================================

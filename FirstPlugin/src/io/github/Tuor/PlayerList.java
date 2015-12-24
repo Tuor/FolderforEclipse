@@ -19,4 +19,13 @@ public class PlayerList {
 		} 
 		return list;
 	}
+	
+	public boolean checkPlayer(Player player){
+		if(playerList.containsKey(player.getName())){
+			return true;
+		}else{
+		return false;	
+		}
+		
+	}
 }
