@@ -49,7 +49,7 @@ package io.github.Tuor;
 	    	//====================================================================================================
 	    	if(cmd.getName().equalsIgnoreCase("getPlayerList")){
 	    		getLogger().info(playerList.getPlayerList());
-	    			return true;
+	    		return true;
 	    	}
 	    	//====================================================================================================
 	    	return false;
