@@ -10,7 +10,7 @@ import org.bukkit.entity.Player;
 public class PlayerList {
 	
 	//HashMap playerList = new HashMap();
-	ArrayList playerList = new ArrayList();
+	ArrayList<Player> playerList = new ArrayList<Player>();
 	
 	public void addPlayer(Player player){
 		playerList.add(player);
