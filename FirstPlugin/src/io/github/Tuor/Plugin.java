@@ -5,7 +5,6 @@ package io.github.Tuor;
 	import org.bukkit.entity.Player;
 	import org.bukkit.event.Listener;
 
-
 	public class Plugin extends JavaPlugin implements Listener{
 	 
 	    @Override
@@ -13,6 +12,7 @@ package io.github.Tuor;
 	    	//Init
 	    	getLogger().info("================================================\n"+"First PlugIn Init\n"+"================================================");
 	    	new PlayerListener(this);
+	    	PlayerList playerlist = new PlayerList();
 	    }
 	   
 	    @Override
@@ -20,6 +20,7 @@ package io.github.Tuor;
 	    }
 	    
 	    public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args){
+	    	//====================================================================================================
 	    	if(cmd.getName().equalsIgnoreCase("Kill1")){
 	    		if(sender instanceof Player){
 	    			Player player = (Player) sender;
@@ -29,7 +30,9 @@ package io.github.Tuor;
 	    			return false;
 	    		}
 	    	}
-	    	if(cmd.getName().equalsIgnoreCase("Build")){
+	    	//====================================================================================================
+	    	//====================================================================================================
+	    	/*if(cmd.getName().equalsIgnoreCase("Build")){
 	    		if(sender instanceof Player){
 	    			Player player = (Player) sender;
 	    			player.getEyeLocation();
@@ -38,6 +41,14 @@ package io.github.Tuor;
 	    			return false;
 	    		}
 	    	}
+	    	*/
+	    	//====================================================================================================
+	    	//====================================================================================================
+	    	if(cmd.getName().equalsIgnoreCase("PlayerList1")){
+	    		getLogger().info(playerlist.);
+	    			return true;
+	    	}
+	    	//====================================================================================================
 	    	return false;
 	    }	
 	}
