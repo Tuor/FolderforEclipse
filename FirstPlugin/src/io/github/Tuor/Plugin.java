@@ -24,6 +24,7 @@ package io.github.Tuor;
 	    
 	    public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args){
 	    	//====================================================================================================
+	    	//Kill Command
 	    	if(cmd.getName().equalsIgnoreCase("Kill1")){
 	    		if(sender instanceof Player){
 	    			Player player = (Player) sender;
@@ -35,6 +36,7 @@ package io.github.Tuor;
 	    	}
 	    	//====================================================================================================
 	    	//====================================================================================================
+	    	//Build Command
 	    	/*if(cmd.getName().equalsIgnoreCase("Build")){
 	    		if(sender instanceof Player){
 	    			Player player = (Player) sender;
@@ -47,6 +49,7 @@ package io.github.Tuor;
 	    	*/
 	    	//====================================================================================================
 	    	//====================================================================================================
+	    	//PlayerList Command
 	    	if(cmd.getName().equalsIgnoreCase("getPlayerList")){
 	    		getLogger().info("A");
 	    		return true;
