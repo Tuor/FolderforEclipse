@@ -1,8 +1,9 @@
 package io.github.Tuor;
 
-/*import java.io.BufferedWriter;
+import java.io.BufferedWriter;
 import java.io.File;
-import java.io.FileWriter;*/
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 
@@ -47,17 +48,16 @@ public class PlayerList {
 		}
 	}
 	
-	/*public void saveList(){
-		File file = //your file
+	public void saveList(){
+		File file = new File("/FirstPlugin/playerList.txt");
 		try{
 			BufferedWriter bw = new BufferedWriter(new FileWriter(file));
-			for(String p:hashmap.keySet()){
-				bw.write(p + "," + hashmap.get(p));
+			for (String p : playerList){
+				bw.write(p);
 				bw.newLine();
 			}
 			bw.flush();
 			bw.close();
-		}
+		}catch (IOException e){}
 	}
-	*/
 }
