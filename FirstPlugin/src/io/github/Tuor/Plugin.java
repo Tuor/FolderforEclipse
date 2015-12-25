@@ -20,7 +20,7 @@ package io.github.Tuor;
 	    	*/
 	    	playerList = new PlayerList();
 	    	
-	    	getLogger().info("================================================\n"+"First PlugIn Init\n"+"================================================");
+	    	getLogger().info("================================================\n"+"+++First PlugIn Init+++\n"+"================================================");
 	    	
 	    	new PlayerListener(this, playerList);
 	    }
