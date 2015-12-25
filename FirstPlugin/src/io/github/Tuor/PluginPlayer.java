@@ -9,4 +9,8 @@ public class PluginPlayer {
 	public PluginPlayer(Player player){
 		this.player = player;
 	}
+	
+	//TODO FACTIONS THIS PLAYER IS INVOLVED WITH AND POSISTION
+	//TODO OWNERSHIP
+	//TODO OTHER RELEVANCE TO PLUGIN
 }
