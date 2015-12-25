@@ -48,8 +48,25 @@ public class PlayerList {
 		}
 	}
 	
+	public boolean checkServerList(Player player){
+		if(playerList.contains(player.getName())){
+			return true;
+		}else{
+			return false;	
+		}
+	}
+	
 	public void saveList(){
-		File file = new File("/FirstPlugin/playerList.txt");
+		File file = new File("/playerList.txt");
+		// if file doesnt exists, then create it
+		if (!file.exists()) {
+			try {
+				file.createNewFile();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
 		try{
 			BufferedWriter bw = new BufferedWriter(new FileWriter(file));
 			for (String p : playerList){
@@ -58,6 +75,8 @@ public class PlayerList {
 			}
 			bw.flush();
 			bw.close();
-		}catch (IOException e){}
+		}catch (IOException e){
+			e.printStackTrace();
+		}
 	}
 }

@@ -63,6 +63,7 @@ package io.github.Tuor;
 	    
 	    @Override
 	    public void onDisable() {
+	    	playerList.saveList();
 	    	/*
 	    	Load the player list and other information onto file on server
 	    	TODO

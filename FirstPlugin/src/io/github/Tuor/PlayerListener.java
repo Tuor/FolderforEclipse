@@ -17,7 +17,7 @@ public class PlayerListener implements Listener{
 	@EventHandler
 	public void blank(PlayerJoinEvent event){
 		Player player = event.getPlayer();
-		if(pl.checkPlayer(player)){
+		if(pl.checkServerList(player)){
 			player.sendMessage("Welcome back to the server");
 		}else{
 			pl.addPlayer(player);
